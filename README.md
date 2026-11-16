@@ -10,7 +10,7 @@ getgenv().sUNCDebug = {
     ["delaybetweentests"] = 0,
     ["printtesttimetaken"] = false,
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/main.lua"))()
 ```
 
 `main.lua` downloads the required source modules automatically.
