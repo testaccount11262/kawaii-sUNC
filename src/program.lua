@@ -495,7 +495,7 @@ end
 local function loadSecondDependency(_)
 	local source = packResults(
 		environment.game:HttpGet(
-			"https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/src/test-dependencies/dependency-2.lua"
+			"https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/src/test-dependencies/dependency-2.lua"
 		)
 	)
 	return environment.loadstring(unpackResults(source, 1, source.n))()
@@ -1536,7 +1536,7 @@ return function(_)
 			environment.task.wait()
 			local source = packResults(
 				environment.game:HttpGet(
-					"https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/src/test-dependencies/api-probe.lua"
+					"https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/src/test-dependencies/api-probe.lua"
 				)
 			)
 			apiProbeResults, apiProbeMessage = environment.loadstring(unpackResults(source, 1, source.n))()
@@ -1832,7 +1832,7 @@ return function(_)
 			reportResult(false, "base64encode", "Function is missing")
 		end
 		local sampleAudio = environment.game:HttpGet(
-			"https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/src/test-dependencies/sample-audio.mp3"
+			"https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/src/test-dependencies/sample-audio.mp3"
 		)
 		ok, err = environment.pcall((testFactories.base64encode(sampleAudio, encodedResult, reportResult, environment)))
 		if not ok then
@@ -1845,7 +1845,7 @@ return function(_)
 			reportResult(true, "base64encode", "")
 		end
 		local encodedSampleAudio = environment.game:HttpGet(
-			"https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/src/test-dependencies/sample-audio.base64"
+			"https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/src/test-dependencies/sample-audio.base64"
 		)
 		runTest(
 			"base64decode",
@@ -3005,7 +3005,7 @@ return function(_)
 				local ok, result = environment.pcall(function(_)
 					local source = packResults(
 						environment.game:HttpGet(
-							"https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/src/test-dependencies/loadstring-probe.lua"
+							"https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/src/test-dependencies/loadstring-probe.lua"
 						)
 					)
 					return environment.loadstring(unpackResults(source, 1, source.n))()
