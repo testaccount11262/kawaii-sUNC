@@ -1,7 +1,7 @@
 --[[
 	Kawaii-sUNC entry point:
 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/main.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/main.lua"))()
 
 	An alternative `fetchSource(path) -> source` function may be passed as the first argument
 	(e.g. for offline runs); by default modules are fetched from the GitHub repository.
@@ -9,7 +9,7 @@
 	factories, program, runtime.
 ]]
 
-local BASE_URL = "https://raw.githubusercontent.com/Kaiddd/kawaii-sUNC/main/"
+local BASE_URL = "https://raw.githubusercontent.com/testaccount11262/kawaii-sUNC/main/"
 local MAX_CONCURRENT_DOWNLOADS = 16
 
 local fetchSource = (...) or function(path)
